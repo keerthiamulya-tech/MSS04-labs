@@ -1,1 +1,17 @@
-print('quadratic equation solver')
+import math
+
+def q_solve(a, b, c):
+    if a == 0:
+        return "Not a quadratic equation"
+
+    discriminant = b**2 - 4*a*c
+
+    if discriminant < 0:
+        return "no real solution"
+    elif discriminant == 0:
+        x = -b / (2*a)
+        return (x,)
+    else:
+        x1 = (-b + math.sqrt(discriminant)) / (2*a)
+        x2 = (-b - math.sqrt(discriminant)) / (2*a)
+        return (x1, x2)
