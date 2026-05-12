@@ -15,3 +15,4 @@ def q_solve(a, b, c):
         x1 = (-b + math.sqrt(discriminant)) / (2*a)
         x2 = (-b - math.sqrt(discriminant)) / (2*a)
         return (x1, x2)
+      
